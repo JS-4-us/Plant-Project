@@ -10,11 +10,9 @@ var outDoor = ["Adonidia Merrillii", "BismarckiaNobilis", "CarpentariaPalmTree",
 var arrayOfPlants = [];
 
 function InDoorPlant(name) {
-  console.log(indoorCounter);
   this.name = name;
   this.categories = "indoor";
   while(indoorCounter < 8) {
-    console.log(indoorCounter);
     this.img = "img/InDoor/cactus&Succulents" + name + ".jpg";
     this.type = "cactus&Succulents";
     break;
@@ -68,7 +66,6 @@ function creatingOutdoorObjects(plantArray) {
 }
 
 //JS for slideshow images (main page)
-console.log(arrayOfPlants);
 var counter = 1;
     setInterval(function(){
         document.getElementById('r' + counter ) .checked = true ;
@@ -81,3 +78,5 @@ var counter = 1;
 //Creating the objects for the plants
 creatingIndoorObjects(inDoor);
 creatingOutdoorObjects(outDoor);
+
+console.log(arrayOfPlants);
