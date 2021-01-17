@@ -35,5 +35,6 @@ Our Wireframe for this project:
 ![Wireframe](img/wireframe.jpg)
 
 
-
+Domain Modeling:
+![Domain Modeling](img/Domain.png)
 
