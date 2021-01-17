@@ -29,3 +29,11 @@ It's a website that will give the user useful information about the plant he sea
     - The ability to purchase plants.
 
     - The ability to get information about plants to take care of it.
+
+Our Wireframe for this project:
+
+![Wireframe](img/wireframe.jpg)
+
+
+
+
