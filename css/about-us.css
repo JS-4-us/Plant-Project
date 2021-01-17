@@ -1,0 +1,73 @@
+
+.headline {
+    background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0317%2F0687%2F3992%2Ffiles%2Fbg_about.jpg%3Fv%3D1580377813);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 80px;
+    text-align: center;
+    font-family: poppins;
+} 
+
+hr {
+    color: black;
+    margin-right: 600px;
+    margin-left: 600px;
+}
+
+.team {
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 50%;
+}
+
+.container {
+    margin: 80px;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(234, 243, 233, 0.7);
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    padding-top: 150px;
+}
+
+.container:hover .text{
+    visibility: visible;
+    opacity: 1;
+}
+
+.section{
+    text-align: center;
+    font-size: 350%;
+    background-color: rgba(9, 48, 16, 0.919);
+    margin-right: 400px;
+    margin-left: 400px;
+    color:rgb(246, 246, 246);
+    border-radius: 50px 20px;
+}
+
+
+h3{
+    color:rgba(9, 48, 16, 0.919) ;
+    font-size: 200%;
+}
+
+p{
+    color:rgba(9, 48, 16, 0.919);
+    font-size: 150%;
+}
+
