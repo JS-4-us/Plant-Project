@@ -135,19 +135,19 @@ section {
 
 .navigation{
     position: absolute;
-    top: 91%;
+    top: 89%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
 }
 .bar{
-    width: 30px;
-    height: 10px;
+    width: 35px;
+    height: 15px;
     border: 2px solid rgba(9, 48, 16, 0.919) ;
     margin: 6px;
     cursor: pointer;
     transition: 0.4s;
-    border-radius: 50%;
+    border-radius: 40%;
 
 }
 .bar:hover{
