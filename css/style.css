@@ -13,38 +13,50 @@ font-size: 15px;
 
  div img {
     float: left;
-    width: 110px;
-    margin-right: 20%;
-  
-}
+    width: 230px;
+    margin-right: 13%;
+    margin-top: 2px;
+    transition: 0.6s;
 
+}
+div.sticky{
+    padding: 0px 10px;
+    background: #fff
+}
 .menu-bar
 {
-  background:rgba(242, 242, 242, 0.378);
-  background-size: cover;
-  background-position: center;
+ 
   position: fixed;
   width: 100%;
-  margin-left: 0%;
-  z-index: 2;
+  left: 0;
+  top: 0;
+  transition: .6s;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+  padding: 10px 30px;
   
   
 }
-
 
 .menu-bar ul
 {
-    display: inline-flex;
+    position: relative;
+    display: flex;
     list-style: none;
     color: cornsilk;
+    justify-content: center;
+    
+   
    
 }
 .menu-bar ul li
 {
     width: 140px;
     margin : 9px 1px 1px;
-    padding: 25px;
+    padding: 15px;
     margin-top: 15px;
+    position: relative;
  
 }
 
@@ -52,70 +64,34 @@ font-size: 15px;
 {
   text-decoration: none ;  
   color: black;
+  position: relative;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+
   
 }
 .active, .menu-bar ul li:hover
 {
-    background:rgba(9, 48, 16, 0.823) ;
-    border-radius: 30px;
-    height: 60px;
-    width: 135px;
-    margin: 15px;
+    margin: 10px;
 }
 
 .menu-bar .fa
 {
     margin-right: 5px;
 }
-.menu-bar .ul2  {
-    float:right;
-    margin-right: 0%;
-    text-align: center;
 
-}
-
-
-.right input {
-    width: 60px;
-    height: 17px;
+li input {
+    width: 80px;
+    height: 19px;
     text-align: center;
     background-color: rgb(242, 242, 242);
-   border-radius: 5px;
+   border-radius: 7px;
 }
-.sub-menu-1
-{
-    display: none;
-}
-.menu-bar ul li:hover .sub-menu-1
-{
-    display: block;
-    position: absolute;
-    background:rgba(10, 29, 12, 0.809) ;
-    margin-top: 25px;
-    margin-left: 5px;
-}
-.menu-bar ul li:hover .sub-menu-1 ul
-{
-    display: block;
-    margin: 5px;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li
-{
-    width: 130px;
-    padding: 6px;
-    border-bottom: 1px dotted #fff;
-    background: transparent ;
-    border-radius: 0;
-    text-align: left;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child
-{
-border-bottom: none;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li a:hover
-{
-    color:rgb(11, 12, 10);
-    
+
+nav.sticky ul li a{
+    color: #000;
+
 }
 section {
     padding: 0;
@@ -135,19 +111,19 @@ section {
 
 .navigation{
     position: absolute;
-    top: 91%;
+    top: 89%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
 }
 .bar{
-    width: 30px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border: 2px solid rgba(9, 48, 16, 0.919) ;
     margin: 6px;
     cursor: pointer;
     transition: 0.4s;
-    border-radius: 50%;
+    border-radius: 30px;
 
 }
 .bar:hover{
@@ -229,7 +205,7 @@ footer .info{
 footer .info ul {
     display: inline-flex;
     list-style: none;
-    margin-top: 50px;
+    margin-top: 28px;
 }
 
 footer .info ul li {
@@ -239,7 +215,6 @@ footer .info ul li {
 }
 footer .info ul li a {
     color: white;
-   
 
 }
 footer .socialMedia{
@@ -249,7 +224,7 @@ footer .socialMedia{
 footer .socialMedia ul{
     display: inline-flex;
     list-style: none;
-    margin-top: 50px;
+    margin-top: 28px;
     
 }
 footer .socialMedia ul li {
@@ -263,6 +238,7 @@ footer .socialMedia ul li a {
     font-size: 30px;
 }
 footer img {
-    width: 150px;
-    margin-top: 20px;
+    width: 130px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
