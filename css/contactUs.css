@@ -120,7 +120,7 @@ fieldset {
 input[type=button] {
     background-color: rgba(9, 48, 16, 0.919);
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
@@ -134,7 +134,7 @@ fieldset input {
     margin: 8px 0;
     box-sizing: border-box;
     background-color: rgb(246, 246, 246);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 main form {
