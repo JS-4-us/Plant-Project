@@ -33,6 +33,7 @@ for (let index = 0; index < cartItems.length; index++) {
             var inputQuantity = document.createElement('input');
             inputQuantity.setAttribute('type', 'number');
             inputQuantity.setAttribute('min', '0');
+            inputQuantity.setAttribute('value', '1')
             inputQuantity.setAttribute('class', cartItems[index].name);
             var tableData = document.createElement('td');
             tableData.appendChild(inputQuantity);
@@ -40,34 +41,54 @@ for (let index = 0; index < cartItems.length; index++) {
         }
     }
 }
-var lastValue = 0;
-var lastValueArray = [];
-var totalButton = document.getElementById('total-price');
-var inputField = [];
-for (let index = 0; index < cartItems.length; index++) {
-    inputField.push(document.getElementsByClassName(cartItems[index].name)[0]);
-    console.log(document.getElementsByClassName(cartItems[index].name)[0]);
-}
-totalButton.addEventListener('click', function (event) {
-    for (let index = 0; index < inputField.length; index++) {
-        inputField[index].addEventListener('change', function (event) {
-            console.log(event.target.value);
-            lastValue = event.target.value;
-            lastValueArray.push(lastValue);
-        });
-        localStorage.setItem('value', lastValueArray);
+
+
+function updateTotal() {
+    var total = 0;
+    var quantityItemsArray = [];
+    for (let index = 0; index < cartItems.length; index++) {
+        quantityItemsArray.push(document.getElementsByClassName(cartItems[index].name)[0])
     }
+    for (let index = 0; index < quantityItemsArray.length; index++) {
+        var price = cartItems[index].price
+        var quantity = parseInt(quantityItemsArray[index].value)
+        // console.log(price, quantity);
+        total += (price * quantity);
+    }
+    console.log(total);
+    return total;
+}
+var quantityItemsArray = [];
+for (let index = 0; index < cartItems.length; index++) {
+    quantityItemsArray.push(document.getElementsByClassName(cartItems[index].name)[0])
+}
+for (let index = 0; index < quantityItemsArray.length; index++) {
+    var input = quantityItemsArray[index]
+    input.addEventListener('change', updateQuantity)
+}
+function updateQuantity(event) {
+    var quantity = event.target;
+    if (isNaN(quantity.value) || quantity.value <= 0) {
+        quantity.value = 1;
+    } else {
+        updateTotal();
+    }
+}
 
+var purchase = document.getElementById('total-price');
+purchase.addEventListener('click', function () {
+    var tableRow = document.createElement('tr');
+    var tableData = document.createElement('td');
+    var par = document.createElement('p');
+    var totalPrice = updateTotal();
+    par.textContent = 'Total';
+    tableData.appendChild(par);
+
+    var tableData2 = document.createElement('td');
+    var par2 = document.createElement('p');
+    par.textContent = `${totalPrice} JD`
+    tableData.appendChild(par2);
+    tableRow.appendChild(tableData2);
+    tableRow.appendChild(tableData);
+    table.appendChild(tableRow);
 });
-// var inputField = document.getElementsByTagName('input');
-
-
-
-
-
-
-// function quantity(event) {
-//     var number = event.target.value;
-//     total += number;
-
-// }
