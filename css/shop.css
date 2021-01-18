@@ -139,6 +139,32 @@ select{
     background-color: rgb(235, 230, 230);
 }
 
+table {
+    width: 700px;
+    height: 700px;
+    border: #000 solid 1px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+table img {
+    width: 100px;
+    height: 100px;
+}
+
+table td {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(6, 19, 8, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
+
+}
+table td img:hover {
+    opacity: 0.4;
+
+}
+
 footer{
     background:rgba(9, 48, 16, 0.919) ;
     background-size: cover;
