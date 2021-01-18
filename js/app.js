@@ -17,7 +17,7 @@ function InDoorPlant(name) {
     this.type = "cactus&Succulents";
     break;
   }
-  while(indoorCounter === 8 && indoorCounter <= 15) {
+  while(indoorCounter >= 8 && indoorCounter <= 15) {
     this.img = "img/InDoor/EvergreenPlants" + name + ".jpg";
     this.type = "EvergreenPlants";
     break;
