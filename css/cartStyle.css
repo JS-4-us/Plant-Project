@@ -127,6 +127,10 @@ table, th, td {
   margin-left: 5%;
   margin-top: 6%;
 }
+table img {
+  width: 20px;
+  height: 20px
+}
 
 #purchaseForm{
 
