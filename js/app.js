@@ -112,4 +112,3 @@ function creatingOutdoorObjects(outDoorPlants, Discreption, price) {
 creatingIndoorObjects(inDoor, inDoorDiscreption, plantsPrices);
 creatingOutdoorObjects(outDoor, outDoorDiscreption, plantsPrices);
 console.log(arrayOfPlants);
-
