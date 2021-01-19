@@ -166,7 +166,7 @@ position: relative;
     box-shadow: 0 4px 8px 0 rgba(6, 19, 8, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
 }
 
-#item-table p{
+#item-table div{
     position: absolute;
     height: 232.5px;
     width: 232px;
@@ -181,6 +181,10 @@ position: relative;
     opacity: 0;
 }
 
+#item-table span {
+    display: block;
+}
+
 /* Zooming into images */
 
 /* #item-table img {
@@ -191,7 +195,7 @@ position: relative;
     transform: scale(1.2);
 } */
 
-#item-table p:hover{
+#item-table div:hover{
     opacity: 1;
     scale: 1.2;
 }
