@@ -107,7 +107,7 @@ function updateQuantity(event) {
 }
 
 var purchase = document.getElementById('total-price');
-var par = document.createElement('p');
+var par = document.createElement('span');
 purchase.addEventListener('click', function () {
     // var tableRow = document.createElement('tr');
     // var tableData = document.createElement('td');
