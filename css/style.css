@@ -277,3 +277,53 @@ footer img {
     margin-top: 7px;
     margin-bottom: 7px;
 }
+
+#imgs{
+    margin-top: 300px;
+}
+
+#imgs div{
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 115px;
+    border: 2px solid rgba(9, 48, 16, 0.919);
+    box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
+}
+
+#imgs div img{
+    width: 350px;
+    height: 300px;
+    margin-bottom: 25px;
+    
+}
+
+#imgs div h2{
+    color: rgba(9, 48, 16, 0.919);
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(234, 243, 233, 0.7);
+    color:rgba(0, 0, 0, 0.815);
+    text-align: center;
+    font-size: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s, visibility .6s;
+    padding-top: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container:hover .text{
+    visibility: visible;
+    opacity: 1;
+    border-radius: 50%;
+}
