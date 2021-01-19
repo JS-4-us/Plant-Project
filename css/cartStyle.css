@@ -29,62 +29,87 @@ div.sticky{
 }
 .menu-bar
 {
-
-position: fixed;
-width: 100%;
-left: 0;
-top: 0;
-transition: .6s;
-justify-content: space-between;
-align-items: center;
-z-index: 100000;
-padding: 10px 30px;
-
+ 
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: .6s;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+  padding: 10px 30px;
 
 }
 
 .menu-bar ul
 {
+    position: relative;
+    display: flex;
+    color: cornsilk;
+    justify-content: center;
+      
+}
+.menu-bar ul li
+{
+    width: 120px;
+    padding-top: 15px;
+    margin-top: 15px;
+    position: relative;
+    list-style: none;
+    
+}
+
+
+.menu-bar ul li a
+{
+  text-decoration: none ;  
+  color: black;
   position: relative;
-  display: flex;
-  list-style: none;
-  color: cornsilk;
-  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+  margin: 20px 0;
   
  
  
 }
-.menu-bar ul li
-{
-  width: 140px;
-  margin : 9px 1px 1px;
-  padding: 15px;
-  margin-top: 15px;
-  position: relative;
 
+.menu-bar ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.563) ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.583) ;
+    transform: scaleY(2.5);
+    opacity: 0;
+    transition: .5s;
+    
+}
+.menu-bar ul li a:hover:before {
+    transform: scaleY(1.7);
+    opacity: 1;
+    
 }
 
-.menu-bar ul li a
-{
-text-decoration: none ;  
-color: black;
-position: relative;
-letter-spacing: 2px;
-font-weight: 500px;
-transition: 0.6s;
 
+.menu-bar ul li a:hover{
+    transition: .2s;
+font-weight: bolder;
 
-}
-.active, .menu-bar ul li:hover
-{
-  margin: 10px;
 }
 
 .menu-bar .fa
 {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
+.fas{
+color: #000;
+}
 li input {
   width: 80px;
   height: 19px;
@@ -221,8 +246,8 @@ fieldset input[type=text], select {
   }
   
   #purchaseForm {
-     margin-left: 5%; 
-     margin-top: 5%;
+    margin-left: 5%; 
+    margin-top: 5%;
     border-radius: 5px;
     background-color: rgb(246, 246, 246);
     padding: 20px;
@@ -261,7 +286,7 @@ fieldset input[type=text]:hover {
     background-size: cover;
     background-position: center;
     text-align: center;  
-    margin-top: 100%; 
+    margin-top: 20%; 
     font-size: 15px;
     color: #fff;
     padding: 2px;

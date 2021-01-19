@@ -145,7 +145,7 @@ indoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowOne.appendChild(tableItem);
-      imgTag.setAttribute('src', '/' + arrayOfType[index].img);
+      imgTag.setAttribute('src',   arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
@@ -158,7 +158,7 @@ indoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowTwo.appendChild(tableItem);
-      imgTag.setAttribute('src', '/' + arrayOfType[index].img);
+      imgTag.setAttribute('src',  arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
@@ -199,7 +199,7 @@ outdoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowOne.appendChild(tableItem);
-      imgTag.setAttribute('src', '/' + arrayOfType[index].img);
+      imgTag.setAttribute('src',  arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
@@ -214,7 +214,7 @@ outdoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowTwo.appendChild(tableItem);
-      imgTag.setAttribute('src', '/' + arrayOfType[index].img);
+      imgTag.setAttribute('src',  arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
