@@ -200,29 +200,31 @@ section{
     /* border: 8px solid green; */
     /* padding: 50px;
     margin: 20px; */
+    font-style: normal;
 }
 
 #about-usimg{
-    width: 50%;
+    width: 47%;
     float: left;
-    /* margin: 20px; */
-    margin-left: 20px;
+    margin-left: 3px;
+    position: relative;
+
 }
 
 
 
 #about-uspara{
-    width: 50%;
+    width: 53%;
    float: right;
     font-size:x-large;
-    margin-top:0px ;
-    /* margin: 30px; */
     position: relative;
-    bottom: 150px;
-    margin-right:30px ;
+    margin-right:20px ;
     margin-left: 80px;
     box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
     padding: 20px;
+    height: 393.962;
+    bottom: 250px;
+
 
 }
 
