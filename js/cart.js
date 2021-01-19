@@ -41,6 +41,7 @@ for (let index = 0; index < cartItems.length; index++) {
             inputQuantity.setAttribute('class', cartItems[index].name);
             var tableData = document.createElement('td');
             tableData.appendChild(inputQuantity);
+            removeButton.setAttribute('id', cartItems[index].name);
             tableData.appendChild(removeButton);
             tableRow.appendChild(tableData);
         }
@@ -52,25 +53,27 @@ for (let index = 0; index < cartItems.length; index++) {
 // console.log(tableRows);
 function deleteItem(event) {
     var removeClicked = event.target;
+
     console.log('', 'removeClicked =========>', removeClicked);
-    for (let index = 0; index < quantityItemsArray.length; index++) {
-        // if (inputQuantity.classList.value === cartItems[index].name) {
-        //     console.log(cartItems[index].name, inputQuantity.classList.value);
-        //     cartItems = cartItems.remove(cartItems[index]);
-        //     quantityItemsArray.remove(quantityItemsArray[index]);
-        //     console.log(inputQuantity.classList.value);
-        //     console.log(cartItems);
+    for (let index = 0; index < cartItems.length; index++) {
+        console.log(removeClicked.id);
+        if (removeClicked.id === cartItems[index].name) {
+            console.log(cartItems[index].name, inputQuantity.classList.value);
+            cartItems = cartItems.remove(cartItems[index]);
+            quantityItemsArray.remove(quantityItemsArray[index]);
+            // console.log(cartItems);
+        }
+
+
     }
     localStorage.setItem('items', JSON.stringify(cartItems));
     updateTotal();
     removeClicked.parentElement.parentElement.remove();
     // console.log(localStorage);
     // console.log(cartItems);
-
+    // console.log(removeClicked.id)
 
 }
-
-
 
 
 var quantityItemsArray = [];
