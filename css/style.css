@@ -35,30 +35,27 @@ div.sticky{
   align-items: center;
   z-index: 100000;
   padding: 10px 30px;
-  
-  
+
 }
 
 .menu-bar ul
 {
     position: relative;
     display: flex;
-    list-style: none;
     color: cornsilk;
     justify-content: center;
-    
-   
-   
+      
 }
 .menu-bar ul li
 {
-    width: 140px;
-    margin : 9px 1px 1px;
-    padding: 15px;
+    width: 120px;
+    padding-top: 15px;
     margin-top: 15px;
     position: relative;
- 
+    list-style: none;
+    
 }
+
 
 .menu-bar ul li a
 {
@@ -67,18 +64,47 @@ div.sticky{
   position: relative;
   letter-spacing: 2px;
   font-weight: 500px;
-  transition: 0.6s;
-
+  transition: 0.5s;
+  margin: 20px 0;
   
+ 
+ 
 }
-.active, .menu-bar ul li:hover
-{
-    margin: 10px;
+
+.menu-bar ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.563) ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.583) ;
+    transform: scaleY(2.5);
+    opacity: 0;
+    transition: .5s;
+    
+}
+.menu-bar ul li a:hover:before {
+    transform: scaleY(1.7);
+    opacity: 1;
+    
+}
+
+
+.menu-bar ul li a:hover{
+    transition: .2s;
+font-weight: bolder;
+
 }
 
 .menu-bar .fa
 {
     margin-right: 5px;
+}
+
+.fas{
+color: #000;
 }
 
 li input {
@@ -97,6 +123,7 @@ section {
     padding: 0;
     margin: 0;
     background: white;
+    height: 601px;
 }
 .slidershow {
     width: 100%;
@@ -111,7 +138,7 @@ section {
 
 .navigation{
     position: absolute;
-    top: 89%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -188,35 +215,74 @@ input[name="r"]{
 }
 
 
-section{
-    height: 500px;
-  
-}
-
+.s
 #about-us{
     width: 100%;
+    /* background-color: rgb(242, 242, 242); */
+   
+    /* border: 8px solid green; */
+    /* padding: 50px;
+    margin: 20px; */
+    font-style: normal;
 }
 
 #about-usimg{
-    width: 50%;
+    width: 47%;
     float: left;
-    /* margin: 20px; */
-    margin-left: 40px;
+    margin-left: 3px;
+    position: relative;
+
 }
+
+
 
 #about-uspara{
-    width: 50%;
+    width: 53%;
    float: right;
     font-size:x-large;
-    margin-top:2px ;
-    /* margin: 30px; */
     position: relative;
-    bottom: 150px;
-    margin-right:30px ;
+    margin-right:20px ;
     margin-left: 80px;
-    box-shadow: 10px 10px 10px rgba(9, 48, 16, 0.919);
+    box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
+    padding: 20px;
+    height: 393.962;
+    bottom: 250px;
+
 
 }
+
+#about-us h1{
+    color:rgba(9, 48, 16, 0.919);
+    font-size: 350%;
+    text-align: center;
+    animation: move 2s;
+  -webkit-animation: move 2s;
+}
+
+@keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+              
+  @-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 
 
 
@@ -276,4 +342,66 @@ footer img {
     width: 130px;
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+#imgs{
+    margin-top: 300px;
+}
+
+#imgs div{
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 115px;
+    box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
+    width: 350px;
+    height: 300px;
+}
+
+#imgs div img{
+    width: 350px;
+    height: 300px;
+    margin-bottom: 25px;
+    
+}
+
+#imgs div h2{
+    color: rgba(9, 48, 16, 0.919);
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.bio {
+    position: absolute;
+    top: 0;
+    height: 300px;
+    width: 350px;
+    background: rgba(217, 223, 217, 0.459);
+    color:rgba(0, 0, 0, 0.815);
+    text-align: center;
+    font-size: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s, visibility .6s;
+    padding-top: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hover:hover .bio{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+#imgs h1 {
+    color: rgba(9, 48, 16, 0.919);
+    font-size: 350%;
+    text-align: center;
+}
+
+.hover{
+    position: relative;
+    width: 350px;
+    height: 300px;
 }

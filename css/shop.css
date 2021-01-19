@@ -183,6 +183,7 @@ position: relative;
     opacity: 0;
     font-family: 'Imbue', serif;
 
+
 }
 
 #item-table span {
@@ -234,7 +235,6 @@ button:disabled {
     background-color:  rgba(0, 0, 0, 0.6); 
     color: white;
 }
-
 footer{
     background:rgba(9, 48, 16, 0.919) ;
     background-size: cover;
