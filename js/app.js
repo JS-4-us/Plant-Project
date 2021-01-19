@@ -151,7 +151,7 @@ indoor.addEventListener('change', function (event) {
       tableItem.appendChild(div);
       par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
-      button.textContent = '';
+      button.textContent = 'Add to cart';
     } else {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
@@ -161,7 +161,7 @@ indoor.addEventListener('change', function (event) {
       tableItem.appendChild(par);
       par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
-      button.textContent = '';
+      button.textContent = 'Add to cart';
     }
 
   }
