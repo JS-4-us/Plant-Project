@@ -139,31 +139,93 @@ select{
     background-color: rgb(235, 230, 230);
 }
 
+
+
 table {
-    width: 500px;
+    width: 700px;
     height: 500px;
-    margin-top: 80px;
+    border: #000 solid 10px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-spacing: 50px 100px;
-    border-collapse: separate;
+overflow: auto;
+
+
+
 }
 
-table img {
+#item-table img {
+position: relative;
+
     width: 250px;
-    height: 230px;
+    height: 300px;
+    border: 1px solid black;
+
+
 }
 
-table td {
-    border: 20px solid white;
+#item-table td {
+position: relative;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(6, 19, 8, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
-    cursor: pointer;
+    border: 20px solid bisque;
 }
 
-table button {
-    margin-top: 10px;
+
+#item-table p{
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    padding: 30px;
+top: 0px;
+font-size: 17px;
+color: seashell;
+word-spacing:11px;
+text-align: start;
+text-indent: 3px;
+
+
+
+    
 }
+
+#item-table button{
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(139, 105, 80);
+    opacity: 0;
+    background-image: url('https://img.favpng.com/15/6/20/shopping-cart-e-commerce-online-shopping-logo-png-favpng-5V0ej7qsf1a8TE39sSj9EDASN.jpg');
+background-size: cover;
+background-position: 50% 50%;
+border-radius:50%;
+
+
+}
+#item-table button:hover{
+    opacity: 1;
+}
+
+#item-table p{
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+
+
+
+#item-table p:hover{
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
 
 footer{
     background:rgba(9, 48, 16, 0.919) ;
