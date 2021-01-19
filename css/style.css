@@ -123,6 +123,7 @@ section {
     padding: 0;
     margin: 0;
     background: white;
+    height: 601px;
 }
 .slidershow {
     width: 100%;
@@ -214,11 +215,7 @@ input[name="r"]{
 }
 
 
-section{
-    height: 500px;
-  
-}
-
+.s
 #about-us{
     width: 100%;
     /* background-color: rgb(242, 242, 242); */
@@ -345,4 +342,66 @@ footer img {
     width: 130px;
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+#imgs{
+    margin-top: 300px;
+}
+
+#imgs div{
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 115px;
+    box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
+    width: 350px;
+    height: 300px;
+}
+
+#imgs div img{
+    width: 350px;
+    height: 300px;
+    margin-bottom: 25px;
+    
+}
+
+#imgs div h2{
+    color: rgba(9, 48, 16, 0.919);
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.bio {
+    position: absolute;
+    top: 0;
+    height: 300px;
+    width: 350px;
+    background: rgba(217, 223, 217, 0.459);
+    color:rgba(0, 0, 0, 0.815);
+    text-align: center;
+    font-size: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s, visibility .6s;
+    padding-top: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hover:hover .bio{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+#imgs h1 {
+    color: rgba(9, 48, 16, 0.919);
+    font-size: 350%;
+    text-align: center;
+}
+
+.hover{
+    position: relative;
+    width: 350px;
+    height: 300px;
 }
