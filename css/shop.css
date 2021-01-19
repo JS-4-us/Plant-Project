@@ -132,38 +132,80 @@ section.block{
     
 }
 select{
-    
     box-shadow: 0 4px 8px 0 rgba(6, 19, 8, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
     padding: 10px;
     color: #000;
     background-color: rgb(235, 230, 230);
 }
 
+
+
 table {
-    width: 500px;
+    width: 700px;
     height: 500px;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-spacing: 50px 100px;
+    overflow: auto;
     border-collapse: separate;
+    border-spacing: 50px  100px;
 }
 
-table img {
+/* table img {
+    width: 230px;
+    height: 230px;
+} */
+
+#item-table img {
+    position: relative;
     width: 230px;
     height: 230px;
 }
 
-table td {
-    border: 20px solid white;
+#item-table td {
+position: relative;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(6, 19, 8, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
-    cursor: pointer;
 }
 
-table button {
-    margin-top: 10px;
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+
+#item-table p{
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    padding: 30px;
+    top: 0px;
+    font-size: 17px;
+    color: seashell;
+    word-spacing:11px;
+    text-align: start;
+    text-indent: 3px; 
+}
+
+#item-table p{
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+/* Zooming into images */
+
+/* #item-table img {
+    transform: scale(0.6);
+}
+
+#item-table img:hover{
+    transform: scale(1.2);
+} */
+
+#item-table p:hover{
+    opacity: 1;
+    scale: 1.2;
+}
+
 
 footer{
     background:rgba(9, 48, 16, 0.919) ;
