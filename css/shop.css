@@ -172,17 +172,23 @@ position: relative;
     width: 232px;
     padding: 30px;
     top: 0px;
-    font-size: 17px;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 3px;
+    word-break: break-word;
+    text-transform: capitalize;
     color: seashell;
-    word-spacing:11px;
-    text-align: start;
-    text-indent: 3px; 
     background: rgba(0, 0, 0, 0.6);
     opacity: 0;
+
 }
 
 #item-table span {
     display: block;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+
 }
 
 /* Zooming into images */
@@ -223,7 +229,6 @@ button:disabled {
     background-color:  rgba(0, 0, 0, 0.6); 
     color: white;
 }
-
 footer{
     background:rgba(9, 48, 16, 0.919) ;
     background-size: cover;
