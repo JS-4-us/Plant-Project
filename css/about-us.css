@@ -115,6 +115,10 @@ hr {
     margin-left: 600px;
 }
 
+main section {
+    text-align: center;
+}
+
 .team {
     width: 250px;
     height: 250px;

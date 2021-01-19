@@ -139,6 +139,7 @@ indoor.addEventListener('change', function (event) {
     var tableItem = document.createElement('td');
     var imgTag = document.createElement('img');
     var par = document.createElement('p');
+    var div = document.createElement('div');
     var button = document.createElement('button');
     if (index < 4) {
       button.setAttribute('class', arrayOfType[index].name);
@@ -146,10 +147,11 @@ indoor.addEventListener('change', function (event) {
       tableRowOne.appendChild(tableItem);
       imgTag.setAttribute('src', '/' + arrayOfType[index].img);
       tableItem.appendChild(imgTag);
-      tableItem.appendChild(par);
+      div.appendChild(par);
+      tableItem.appendChild(div);
       par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
-      button.textContent = 'add to cart';
+      button.textContent = 'Add to cart';
     } else {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
@@ -159,7 +161,7 @@ indoor.addEventListener('change', function (event) {
       tableItem.appendChild(par);
       par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
-      button.textContent = 'add to cart';
+      button.textContent = 'Add to cart';
     }
 
   }
@@ -194,7 +196,7 @@ outdoor.addEventListener('change', function (event) {
       tableItem.appendChild(par);
       par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
-      button.textContent = 'add to cart';
+      button.textContent = '';
     } else {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
@@ -204,7 +206,7 @@ outdoor.addEventListener('change', function (event) {
       tableItem.appendChild(par);
       par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
-      button.textContent = 'add to cart';
+      button.textContent = '';
     }
 
   }
