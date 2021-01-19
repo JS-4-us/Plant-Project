@@ -21,6 +21,8 @@ var arrayOfDescription =['The Aloe Vera thrives on bright light conditions, but 
 console.log(arrayOfNames);
 console.log(arrayOfsrc);
 
+
+
 for (let index = 0; index < arrayOfPlants.length; index++) {
     arrayOfNames.push(arrayOfPlants[index].name);
     arrayOfsrc.push(arrayOfPlants[index].img);   
@@ -40,6 +42,8 @@ function renderImgs(leftPlant,middlePlant,rightPlant){
     descriptionLeft.textContent=arrayOfDescription[leftPlant];
     descriptionMiddle.textContent=arrayOfDescription[middlePlant];
     descriptionRight.textContent=arrayOfDescription[rightPlant];
+
+    console.log(descriptionLeft.classList);
 }
 
 

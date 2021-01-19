@@ -97,6 +97,7 @@ section {
     padding: 0;
     margin: 0;
     background: white;
+    height: 601px;
 }
 .slidershow {
     width: 100%;
@@ -188,11 +189,7 @@ input[name="r"]{
 }
 
 
-section{
-    height: 500px;
-  
-}
-
+.s
 #about-us{
     width: 100%;
 }
@@ -287,8 +284,9 @@ footer img {
     text-align: center;
     margin-top: 100px;
     margin-left: 115px;
-    border: 2px solid rgba(9, 48, 16, 0.919);
     box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
+    width: 350px;
+    height: 300px;
 }
 
 #imgs div img{
@@ -305,13 +303,12 @@ footer img {
     font-weight: bolder;
 }
 
-.text {
+.bio {
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(234, 243, 233, 0.7);
+    height: 300px;
+    width: 350px;
+    background: rgba(217, 223, 217, 0.459);
     color:rgba(0, 0, 0, 0.815);
     text-align: center;
     font-size: 150%;
@@ -322,8 +319,20 @@ footer img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container:hover .text{
+.hover:hover .bio{
     visibility: visible;
     opacity: 1;
-    border-radius: 50%;
+
+}
+
+#imgs h1 {
+    color: rgba(9, 48, 16, 0.919);
+    font-size: 350%;
+    text-align: center;
+}
+
+.hover{
+    position: relative;
+    width: 350px;
+    height: 300px;
 }
