@@ -138,8 +138,6 @@ select{
     background-color: rgb(235, 230, 230);
 }
 
-
-
 table {
     width: 700px;
     height: 500px;
@@ -168,29 +166,31 @@ position: relative;
     box-shadow: 0 4px 8px 0 rgba(6, 19, 8, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
 }
 
-button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-#item-table p{
+#item-table div{
     position: absolute;
-    height: 230px;
-    width: 230px;
+    height: 232.5px;
+    width: 232px;
     padding: 30px;
     top: 0px;
-    font-size: 17px;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 3px;
+    word-break: break-word;
+    text-transform: capitalize;
     color: seashell;
-    word-spacing:11px;
-    text-align: start;
-    text-indent: 3px; 
-}
-
-#item-table p{
     background: rgba(0, 0, 0, 0.6);
     opacity: 0;
+
 }
+
+#item-table span {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+
+}
+
 /* Zooming into images */
 
 /* #item-table img {
@@ -201,12 +201,34 @@ button {
     transform: scale(1.2);
 } */
 
-#item-table p:hover{
+#item-table div:hover{
     opacity: 1;
     scale: 1.2;
 }
 
+button {
+    width: 232px;
+    padding: 30px;
+    top: 0px;
+    font-size: 20px;
+    color:  white;
+    background-color:rgb(73, 96, 49);
+    text-align: center;
+    text-indent: 3px; 
+    border: none;
+    opacity: 1;
+}
 
+button:hover{
+    background: rgb(20, 52, 33);
+    opacity: 1;
+    scale: 1.2;
+}
+
+button:disabled {
+    background-color:  rgba(0, 0, 0, 0.6); 
+    color: white;
+}
 footer{
     background:rgba(9, 48, 16, 0.919) ;
     background-size: cover;

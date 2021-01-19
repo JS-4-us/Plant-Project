@@ -138,6 +138,7 @@ indoor.addEventListener('change', function (event) {
     var tableItem = document.createElement('td');
     var imgTag = document.createElement('img');
     var par = document.createElement('p');
+    var price = document.createElement('span');
     var div = document.createElement('div');
     var button = document.createElement('button');
     if (index < 4) {
@@ -147,8 +148,10 @@ indoor.addEventListener('change', function (event) {
       imgTag.setAttribute('src', '/' + arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
+      div.appendChild(price);
       tableItem.appendChild(div);
-      par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
+      par.textContent = `${arrayOfType[index].name}`;
+      price.textContent = `${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
       button.textContent = 'Add to cart';
     } else {
@@ -157,8 +160,11 @@ indoor.addEventListener('change', function (event) {
       tableRowTwo.appendChild(tableItem);
       imgTag.setAttribute('src', '/' + arrayOfType[index].img);
       tableItem.appendChild(imgTag);
-      tableItem.appendChild(par);
-      par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
+      div.appendChild(par);
+      div.appendChild(price);
+      tableItem.appendChild(div);
+      par.textContent = `${arrayOfType[index].name}`;
+      price.textContent = `${arrayOfType[index].price} JD`;
       tableItem.appendChild(button);
       button.textContent = 'Add to cart';
     }
@@ -185,6 +191,10 @@ outdoor.addEventListener('change', function (event) {
     var tableItem = document.createElement('td');
     var imgTag = document.createElement('img');
     var par = document.createElement('p');
+    var price = document.createElement('span');
+
+    var div = document.createElement('div');
+
     var button = document.createElement('button');
     if (index < 4) {
       button.setAttribute('class', arrayOfType[index].name);
@@ -192,20 +202,31 @@ outdoor.addEventListener('change', function (event) {
       tableRowOne.appendChild(tableItem);
       imgTag.setAttribute('src', '/' + arrayOfType[index].img);
       tableItem.appendChild(imgTag);
-      tableItem.appendChild(par);
-      par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
+      div.appendChild(par);
+      div.appendChild(price);
+      tableItem.appendChild(div);
+      par.textContent = `${arrayOfType[index].name} `;
+      price.textContent = `${arrayOfType[index].price} JD`;
+      
+
       tableItem.appendChild(button);
-      button.textContent = '';
+      button.textContent = 'Add to cart';
     } else {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowTwo.appendChild(tableItem);
       imgTag.setAttribute('src', '/' + arrayOfType[index].img);
       tableItem.appendChild(imgTag);
-      tableItem.appendChild(par);
-      par.textContent = `${arrayOfType[index].name}  ${arrayOfType[index].price} JD`;
+      div.appendChild(par);
+      div.appendChild(price);
+      tableItem.appendChild(div);
+
+      par.textContent = `${arrayOfType[index].name}  `;
+      price.textContent = `${arrayOfType[index].price} JD`;
+
+
       tableItem.appendChild(button);
-      button.textContent = '';
+      button.textContent = 'Add to cart';
     }
 
   }
@@ -231,3 +252,6 @@ function cart(event) {
 function storeData() {
   localStorage.setItem('items', JSON.stringify(cartItems));
 }
+
+
+
