@@ -192,7 +192,6 @@ outdoor.addEventListener('change', function (event) {
     var imgTag = document.createElement('img');
     var par = document.createElement('p');
     var price = document.createElement('span');
-
     var div = document.createElement('div');
 
     var button = document.createElement('button');
@@ -205,9 +204,9 @@ outdoor.addEventListener('change', function (event) {
       div.appendChild(par);
       div.appendChild(price);
       tableItem.appendChild(div);
-      par.textContent = `${arrayOfType[index].name} `;
+
+      par.textContent = `${arrayOfType[index].name}`;
       price.textContent = `${arrayOfType[index].price} JD`;
-      
 
       tableItem.appendChild(button);
       button.textContent = 'Add to cart';
@@ -221,9 +220,8 @@ outdoor.addEventListener('change', function (event) {
       div.appendChild(price);
       tableItem.appendChild(div);
 
-      par.textContent = `${arrayOfType[index].name}  `;
+      par.textContent = `${arrayOfType[index].name}`;
       price.textContent = `${arrayOfType[index].price} JD`;
-
 
       tableItem.appendChild(button);
       button.textContent = 'Add to cart';
