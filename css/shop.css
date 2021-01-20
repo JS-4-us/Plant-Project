@@ -137,6 +137,7 @@ main{
     text-align: center;
     font-family: poppins;
     font-size: 200%;
+    font-weight: 900;
 }
 
 section.block{
@@ -266,7 +267,7 @@ footer{
     background-size: cover;
     background-position: center;
     text-align: center;  
-    margin-top: 70%; 
+    margin-top: 58%; 
     font-size: 15px;
     color: #fff;
     padding: 2px;
