@@ -8,7 +8,7 @@ body
 {
 background-color: white;
 font-family: sans-serif;
-font-size: 15px;
+font-size: 14px;
 }
 
  div img {
@@ -31,7 +31,6 @@ div.sticky{
   left: 0;
   top: 0;
   transition: .6s;
-  justify-content: space-between;
   align-items: center;
   z-index: 100000;
   padding: 10px 30px;
@@ -108,7 +107,7 @@ color: #000;
 }
 
 li input {
-    width: 80px;
+    width: 70px;
     height: 19px;
     text-align: center;
     background-color: rgb(242, 242, 242);
@@ -119,6 +118,63 @@ nav.sticky ul li a{
     color: #000;
 
 }
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: rgba(85, 85, 85, 0.748);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -40px;
+    font-size: 10px;
+    
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(85, 85, 85, 0.734) transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 section {
     padding: 0;
     margin: 0;
@@ -214,6 +270,69 @@ input[name="r"]{
     background: white;
 }
 
+#imgs{
+    margin-top: 300px;
+    margin-bottom: 10%;
+}
+
+#imgs div{
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 115px;
+    box-shadow: 0 6px 10px 0 rgba(9, 48, 16, 0.919), 0 8px 22px 0  rgba(9, 48, 16, 0.919);
+    width: 300px;
+    height: 350px;
+}
+
+#imgs div img{
+    width: 300px;
+    height: 350px;
+    margin-bottom: 25px;
+    
+}
+
+#imgs div h2{
+    color: rgba(9, 48, 16, 0.919);
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.bio {
+    position: absolute;
+    top: 0;
+    height: 350px;
+    width: 300px;
+    background: rgba(217, 223, 217, 0.459);
+    color:rgba(0, 0, 0, 0.815);
+    text-align: center;
+    font-size: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s, visibility .6s;
+    padding-top: 120px;
+   
+}
+
+.hover:hover .bio{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+#imgs h1 {
+    color: rgba(9, 48, 16, 0.919);
+    font-size: 350%;
+    text-align: center;
+
+}
+
+.hover{
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
 
 .s
 #about-us{
@@ -284,17 +403,12 @@ input[name="r"]{
   }
 
 
-
-
-
-
-
 footer{
   background:rgba(9, 48, 16, 0.919) ;
   background-size: cover;
   background-position: center;
   text-align: center;  
-  margin-top: 100%; 
+  margin-top: 20%; 
   font-size: 15px;
   color: #fff;
   padding: 2px;
@@ -344,64 +458,3 @@ footer img {
     margin-bottom: 7px;
 }
 
-#imgs{
-    margin-top: 300px;
-}
-
-#imgs div{
-    display: inline-block;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 115px;
-    box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
-    width: 350px;
-    height: 300px;
-}
-
-#imgs div img{
-    width: 350px;
-    height: 300px;
-    margin-bottom: 25px;
-    
-}
-
-#imgs div h2{
-    color: rgba(9, 48, 16, 0.919);
-    margin-bottom: 15px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.bio {
-    position: absolute;
-    top: 0;
-    height: 300px;
-    width: 350px;
-    background: rgba(217, 223, 217, 0.459);
-    color:rgba(0, 0, 0, 0.815);
-    text-align: center;
-    font-size: 150%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .6s, visibility .6s;
-    padding-top: 120px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.hover:hover .bio{
-    visibility: visible;
-    opacity: 1;
-
-}
-
-#imgs h1 {
-    color: rgba(9, 48, 16, 0.919);
-    font-size: 350%;
-    text-align: center;
-}
-
-.hover{
-    position: relative;
-    width: 350px;
-    height: 300px;
-}

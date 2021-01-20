@@ -15,6 +15,11 @@ window.addEventListener('scroll', function () {
   var div = document.querySelector('div');
   div.classList.toggle('sticky', window.scrollY > 0);
 });
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 
 //Setting the data for the plants
 var indoorCounter = 0;
