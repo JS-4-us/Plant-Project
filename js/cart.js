@@ -1,3 +1,10 @@
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+
 //JS for navbar movement
 window.addEventListener('scroll', function () {
     var div = document.querySelector('div');
@@ -130,7 +137,7 @@ purchase.addEventListener('click', function () {
     var tableSection = document.getElementById('table');
     par.textContent = `Total: ${totalPrice} JD`
     tableSection.appendChild(par);
-
+    document.getElementById("purchaseForm").style.display = "block";
 });
 
 
@@ -146,3 +153,33 @@ Array.prototype.remove = function () {
     }
     return this;
 };
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  location.reload();
+  localStorage.clear();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

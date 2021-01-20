@@ -1,3 +1,9 @@
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -15,6 +21,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  location.reload();
 }
 
 // When the user clicks anywhere outside of the modal, close it

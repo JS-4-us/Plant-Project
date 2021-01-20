@@ -25,9 +25,14 @@
                     <li><a href="shop.html"><i class="fa fa-shopping-bag"></i> Shop </a> </li>
                     <li><a href="aboutus.html"><i class="fa fa-address-card"></i> About us </a>
                     <li><a href="contact.html"><i class="fa fa-phone"> </i> Contact </a></li>
-                    <li > <form action="https://garden.org/plants/search/text/?"><i class="fas fa-search"></i>
-                        <input class="inputt" type="text" name="q" placeholder="Search ">
-                    </form> </li>
+                    <li > 
+                        <form action="https://garden.org/plants/search/text/?"><i class="fas fa-search"></i>
+                            <div class="popup" onclick="myFunction()">
+                                <span class="popuptext" id="myPopup">Search Here for any Plant you want!</span>
+                            </div>
+                            <input class="popup" onclick="myFunction()" type="text" name="q"> 
+                        </form>     
+                    </li>
                     <li ><a href="cart.html"><i class="fas fa-cart-plus"></i>  cart</a></li>
         
                 
@@ -46,17 +51,17 @@
                 <label for="name">
                     Full Name
                 </label>
-                <input id="name" name="name" type="text" required>
+                <input id="name" name="name" type="text" placeholder="Full name" required>
                 <br>
                 <label for="email">
                     E-mail
                 </label>
-                <input id="email" name="email" type="email" required>
+                <input id="email" name="email" type="email" placeholder="username@mail.com" required>
                 <br>
                 <label for="number">
                     Phone Number
                 </label>
-                <input id="number" name="phone" type="number">
+                <input id="number" name="phone" type="number" value="00962" required>
                 <br>
                 <label for="message">
                     Message
