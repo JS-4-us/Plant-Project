@@ -1,3 +1,4 @@
+
 var leftPlantImg = document.getElementById('left_plant_img');
 var middlePlantImg = document.getElementById('middle_plant_img');
 var rightPlantImg = document.getElementById('right_plant_img');

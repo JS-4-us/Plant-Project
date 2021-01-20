@@ -131,7 +131,7 @@ nav.sticky ul li a{
   /* The actual popup */
   .popup .popuptext {
     visibility: hidden;
-    width: 180px;
+    width: 175px;
     background-color: rgba(85, 85, 85, 0.748);
     color: #fff;
     text-align: center;
@@ -143,19 +143,22 @@ nav.sticky ul li a{
     left: 50%;
     margin-left: -40px;
     font-size: 10px;
-    
+    height: 25px;
+    top: -46px;
   }
   
   /* Popup arrow */
   .popup .popuptext::after {
     content: "";
     position: absolute;
-    top: 100%;
+    /* top: 100%; */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: rgba(85, 85, 85, 0.734) transparent transparent transparent;
+    top: 25px;
+    left: 80px;
   }
   
   /* Toggle this class - hide and show the popup */
@@ -271,8 +274,24 @@ input[name="r"]{
 }
 
 #imgs{
-    margin-top: 300px;
-    margin-bottom: 10%;
+    margin-top: 200px;
+    margin-bottom: 14%;
+    margin-right: 7%;
+    text-align: center;
+    
+}
+
+#imgs h1 {
+    margin-left: 3%;
+    width: 100%;
+    font-family: Lucida Calligraphy;
+    animation: move 2s;
+    -webkit-animation: move 2s;
+}
+
+#imgs h2 {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 #imgs div{
@@ -297,6 +316,8 @@ input[name="r"]{
     margin-bottom: 15px;
     text-align: center;
     font-weight: bolder;
+    font-size: 23px;
+    font-family: 'Font Awesome 5 Brands';
 }
 
 .bio {
@@ -305,13 +326,15 @@ input[name="r"]{
     height: 350px;
     width: 300px;
     background: rgba(217, 223, 217, 0.459);
-    color:rgba(0, 0, 0, 0.815);
+    color: rgba(0, 0, 0, 0.815);
     text-align: center;
     font-size: 150%;
     visibility: hidden;
     opacity: 0;
     transition: opacity .6s, visibility .6s;
     padding-top: 120px;
+    font-weight: 600;
+    font-family: cursive;
    
 }
 
@@ -334,7 +357,6 @@ input[name="r"]{
     height: 350px;
 }
 
-.s
 #about-us{
     width: 100%;
     /* background-color: rgb(242, 242, 242); */
@@ -346,37 +368,50 @@ input[name="r"]{
 }
 
 #about-usimg{
-    width: 47%;
+    width: 38%;
+    height: 119%;
     float: left;
-    margin-left: 3px;
     position: relative;
+    margin-left: 7%;
+    z-index: 6;
+}
 
+div .last-img {
+    position: relative;
 }
 
 
 
 #about-uspara{
-    width: 53%;
-   float: right;
-    font-size:x-large;
+    width: 55%;
+    right: 122px;
     position: relative;
-    margin-right:20px ;
-    margin-left: 80px;
-    box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
+    top: 238px;
+    float: right;
+    text-align: center;
+    word-spacing: 3px;
+    font-family: Lucida Calligraphy;
+    font-size: xx-large;
+    border: 1px solid rgba(9, 48, 16, 0.919);
     padding: 20px;
     height: 393.962;
     bottom: 250px;
-
-
+    z-index: 3;
+    line-height: 1.3em;
+    font-weight: bolder;
+    color: rgb(84, 105, 49);
 }
 
 #about-us h1{
+    font-family: Lucida Calligraphy;
     color:rgba(9, 48, 16, 0.919);
     font-size: 350%;
     text-align: center;
     animation: move 2s;
-  -webkit-animation: move 2s;
+    -webkit-animation: move 2s;
+     margin-top: 10px;
 }
+
 
 @keyframes move {
     from {
@@ -458,3 +493,28 @@ footer img {
     margin-bottom: 7px;
 }
 
+
+
+/* ******hr styles******** */ 
+#hr1 {
+    border: 0;
+    height: 100px;
+    background-image: url(../img/leaf.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    margin-left: 500px;
+    bottom: 25px;
+    position: relative;
+}
+
+
+#hr2 {
+    border: 0;
+    height: 100px;
+    background-image: url(../img/leaf.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    margin-left: 465px;
+    bottom: 20px;
+    position: relative;
+}

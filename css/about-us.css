@@ -129,6 +129,7 @@ nav.sticky ul li a{
     font-family: poppins;
     font-size: 200%;
     margin-bottom: 5%;
+    font-weight: 900;
 } 
 
 header{
@@ -193,10 +194,12 @@ main section {
     background-color: rgba(9, 48, 16, 0.919);
     margin-right: 400px;
     margin-left: 400px;
-    margin-bottom: 50px;
+    margin-bottom: -46px;
     color:rgb(246, 246, 246);
     border-radius: 50px 20px;
-   
+    z-index: 6;
+    position: relative;
+    font-family: 'Font Awesome 5 Pro';
 }
 
 
@@ -223,6 +226,7 @@ article{
     margin-top: 0%;
     background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0317%2F0687%2F3992%2Ffiles%2Fbg-testimonial.jpg%3Fv%3D1580871467);
     padding: 8%;
+    z-index: 5;
 }
 
 footer{
@@ -279,4 +283,66 @@ footer{
       width: 130px;
       margin-top: 7px;
       margin-bottom: 7px;
+  }
+
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 175px;
+    background-color: rgba(85, 85, 85, 0.748);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -40px;
+    font-size: 10px;
+    height: 25px;
+    top: -46px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    /* top: 100%; */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(85, 85, 85, 0.734) transparent transparent transparent;
+    top: 25px;
+    left: 80px;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
   }
