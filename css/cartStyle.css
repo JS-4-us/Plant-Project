@@ -29,62 +29,87 @@ div.sticky{
 }
 .menu-bar
 {
-
-position: fixed;
-width: 100%;
-left: 0;
-top: 0;
-transition: .6s;
-justify-content: space-between;
-align-items: center;
-z-index: 100000;
-padding: 10px 30px;
-
+ 
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: .6s;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+  padding: 10px 30px;
 
 }
 
 .menu-bar ul
 {
+    position: relative;
+    display: flex;
+    color: cornsilk;
+    justify-content: center;
+      
+}
+.menu-bar ul li
+{
+    width: 120px;
+    padding-top: 15px;
+    margin-top: 15px;
+    position: relative;
+    list-style: none;
+    
+}
+
+
+.menu-bar ul li a
+{
+  text-decoration: none ;  
+  color: black;
   position: relative;
-  display: flex;
-  list-style: none;
-  color: cornsilk;
-  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+  margin: 20px 0;
   
  
  
 }
-.menu-bar ul li
-{
-  width: 140px;
-  margin : 9px 1px 1px;
-  padding: 15px;
-  margin-top: 15px;
-  position: relative;
 
+.menu-bar ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.563) ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.583) ;
+    transform: scaleY(2.5);
+    opacity: 0;
+    transition: .5s;
+    
+}
+.menu-bar ul li a:hover:before {
+    transform: scaleY(1.7);
+    opacity: 1;
+    
 }
 
-.menu-bar ul li a
-{
-text-decoration: none ;  
-color: black;
-position: relative;
-letter-spacing: 2px;
-font-weight: 500px;
-transition: 0.6s;
 
+.menu-bar ul li a:hover{
+    transition: .2s;
+font-weight: bolder;
 
-}
-.active, .menu-bar ul li:hover
-{
-  margin: 10px;
 }
 
 .menu-bar .fa
 {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
+.fas{
+color: #000;
+}
 li input {
   width: 80px;
   height: 19px;
@@ -112,6 +137,7 @@ nav.sticky ul li a{
 table, th, td {
     border-collapse: collapse;
     padding: 15px;
+    border: rgba(0, 0, 0, 0.623) solid 1px ;
 
   }
   th {
@@ -119,25 +145,25 @@ table, th, td {
   }
 
   table {
-    position: relative;
+  position: relative;
   align-items: center;
-    color: rgb(15, 14, 14);
+  color: rgb(15, 14, 14);
   border-spacing: 5px;
-border-radius: 5px 5px 5px 5px;
-border-bottom: 5px solid rgb(35, 65, 36) ;
-box-shadow: 0 0 20px   rgb(35, 65, 36);
-
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: 5px solid rgb(35, 65, 36) ;
+  box-shadow: 0 0 20px   rgb(35, 65, 36);
   margin: 30px;
   width: 500px;
   margin-bottom: 50px;
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 6%;
-  text-align: left ;
+  text-align: center ;
   font-weight: bold ;
-  border-radius:5px 10px 5px 0  ;
-border-left: 5px solid cornsilk;
-border-right: 5px solid cornsilk;
-overflow: hidden;
+  border-radius: 10px  ;
+  border-left: 5px solid cornsilk;
+  border-right: 5px solid cornsilk;
+  overflow: hidden;
   
 }
 
@@ -146,8 +172,13 @@ color: #fff;
 }
 table img {
 
-  width: 80px;
-  height: 70px
+  width: 100px;
+  height: 90px;
+  
+
+}
+table{
+  border:  solid 2px #000;
 }
 
 #purchaseForm{
@@ -157,20 +188,23 @@ table img {
 }
 .submit{
   
-margin-left: 600px;
+margin-left: 48%;
 width: 80px;
-height: 50px;
+height: 40px;
 background-color:rgb(35, 65, 36) ;
 color: #fff;
 border-radius: 10px;
+m
 }
 
 button{
   background-color:rgb(35, 65, 36);
   color: white;
+  font-size: 11px;
   border-radius: 5px;
-  height: 30px;
-  width: 60px;
+  height: 26px;
+  width: 50px;
+  margin-left: 15px;
 }
 
 input{
@@ -179,9 +213,11 @@ input{
 }
 span{
   font-size: 20px;
-color: lightcoral;
-border: 2px dashed cornflowerblue;
-
+  color: #000;
+  border: 2px solid rgb(0, 0, 0);
+  padding-bottom: 2px ;
+  
+  
 }
 
 .th3{
@@ -203,37 +239,42 @@ fieldset input[type=text], select {
   }
   
   fieldset input[type=submit] {
-    width: 20%;
+    width: 15%;
     background-color: rgba(9, 48, 16, 0.919);
     color: white;
-    padding: 14px 20px;
+    padding: 15px 15px;
+    padding-bottom: 30px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
-    margin-left: 500px;
+    margin-left: 320px;
+    
   }
 
 
   
   fieldset input[type=submit]:hover {
-    background-color:rgba(165, 194, 170, 0.919) ;
+    background-color:rgba(32, 77, 40, 0.919) ;
   }
   
   #purchaseForm {
-     margin-left: 5%; 
-     margin-top: 5%;
+    margin-left: 5%; 
+    margin-top: 5%;
     border-radius: 5px;
     background-color: rgb(246, 246, 246);
-    padding: 20px;
-    width:90%;
+    padding: 30px;
+    margin-left: 20%;
+    width:60%;
     box-shadow: 0 4px 8px 0 rgba(9, 48, 16, 0.919), 0 6px 20px 0  rgba(9, 48, 16, 0.919);
     
   }
 
   fieldset label{
 
-  margin-left: 15px;
+  margin-left: 20px;
+  
+  
  
   }
   legend{
@@ -261,7 +302,7 @@ fieldset input[type=text]:hover {
     background-size: cover;
     background-position: center;
     text-align: center;  
-    margin-top: 100%; 
+    margin-top: 10%; 
     font-size: 15px;
     color: #fff;
     padding: 2px;

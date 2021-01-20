@@ -15,6 +15,11 @@ window.addEventListener('scroll', function () {
   var div = document.querySelector('div');
   div.classList.toggle('sticky', window.scrollY > 0);
 });
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 
 //Setting the data for the plants
 var indoorCounter = 0;
@@ -145,7 +150,7 @@ indoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowOne.appendChild(tableItem);
-      imgTag.setAttribute('src', arrayOfType[index].img);
+      imgTag.setAttribute('src',   arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
@@ -158,7 +163,7 @@ indoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowTwo.appendChild(tableItem);
-      imgTag.setAttribute('src', arrayOfType[index].img);
+      imgTag.setAttribute('src',  arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
@@ -199,7 +204,7 @@ outdoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowOne.appendChild(tableItem);
-      imgTag.setAttribute('src',arrayOfType[index].img);
+      imgTag.setAttribute('src',  arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
@@ -214,7 +219,7 @@ outdoor.addEventListener('change', function (event) {
       button.setAttribute('class', arrayOfType[index].name);
       button.addEventListener('click', cart);
       tableRowTwo.appendChild(tableItem);
-      imgTag.setAttribute('src',arrayOfType[index].img);
+      imgTag.setAttribute('src',  arrayOfType[index].img);
       tableItem.appendChild(imgTag);
       div.appendChild(par);
       div.appendChild(price);
