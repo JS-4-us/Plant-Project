@@ -131,7 +131,7 @@ nav.sticky ul li a{
   /* The actual popup */
   .popup .popuptext {
     visibility: hidden;
-    width: 180px;
+    width: 175px;
     background-color: rgba(85, 85, 85, 0.748);
     color: #fff;
     text-align: center;
@@ -143,19 +143,22 @@ nav.sticky ul li a{
     left: 50%;
     margin-left: -40px;
     font-size: 10px;
-    
+    height: 25px;
+    top: -46px;
   }
   
   /* Popup arrow */
   .popup .popuptext::after {
     content: "";
     position: absolute;
-    top: 100%;
+    /* top: 100%; */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: rgba(85, 85, 85, 0.734) transparent transparent transparent;
+    top: 25px;
+    left: 80px;
   }
   
   /* Toggle this class - hide and show the popup */
@@ -282,6 +285,8 @@ input[name="r"]{
     margin-left: 3%;
     width: 100%;
     font-family: Lucida Calligraphy;
+    animation: move 2s;
+    -webkit-animation: move 2s;
 }
 
 #imgs h2 {
@@ -321,13 +326,15 @@ input[name="r"]{
     height: 350px;
     width: 300px;
     background: rgba(217, 223, 217, 0.459);
-    color:rgba(0, 0, 0, 0.815);
+    color: rgba(0, 0, 0, 0.815);
     text-align: center;
     font-size: 150%;
     visibility: hidden;
     opacity: 0;
     transition: opacity .6s, visibility .6s;
     padding-top: 120px;
+    font-weight: 600;
+    font-family: cursive;
    
 }
 
@@ -379,7 +386,7 @@ div .last-img {
     width: 55%;
     right: 122px;
     position: relative;
-    top: 226px;
+    top: 238px;
     float: right;
     text-align: center;
     word-spacing: 3px;
@@ -489,13 +496,25 @@ footer img {
 
 
 /* ******hr styles******** */ 
-hr {
+#hr1 {
     border: 0;
     height: 100px;
     background-image: url(../img/leaf.png);
     background-repeat: no-repeat;
-    background-size: 26%;
-    left: 630px;
-    bottom: 13px;
+    background-size: 55%;
+    margin-left: 500px;
+    bottom: 25px;
+    position: relative;
+}
+
+
+#hr2 {
+    border: 0;
+    height: 100px;
+    background-image: url(../img/leaf.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    margin-left: 465px;
+    bottom: 20px;
     position: relative;
 }
